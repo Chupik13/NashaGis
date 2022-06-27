@@ -20,9 +20,9 @@ namespace NashaGis2
     [GisApplication(GisApplicationType.Map)]
     [Guid("1EAE5EAA-567D-448A-8CD8-B17AE28C554B")]
     [BarItem(true, 5, CommandIconSize.Large, true)]
-    public class SampleLargeButton : ButtonCommandInfo
+    public class TestTask : ButtonCommandInfo
     {
-        public SampleLargeButton() : base("Тестовое задание", "Тестовое задание", "Выборка", SGP.Gis.Resources.Icons.IconType.Run)
+        public TestTask() : base("Тестовое задание", "Тестовое задание", "Выборка", SGP.Gis.Resources.Icons.IconType.Run)
         {
             IsEnabled = true;
             IsVisible = true;
