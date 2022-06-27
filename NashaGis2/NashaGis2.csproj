@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="SGP.Gis.Controls">
+      <HintPath>..\..\..\..\AppData\Local\NashaGIS Editor\SGP.Gis.Controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SGP.Gis.CoordinateSystem">
+      <HintPath>..\..\..\..\AppData\Local\NashaGIS Editor\SGP.Gis.CoordinateSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SGP.Gis.Core">
+      <HintPath>..\..\..\..\AppData\Local\NashaGIS Editor\SGP.Gis.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SGP.Gis.Map">
+      <HintPath>..\..\..\..\AppData\Local\NashaGIS Editor\SGP.Gis.Map.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SGP.Gis.Resources">
+      <HintPath>..\..\..\..\AppData\Local\NashaGIS Editor\SGP.Gis.Resources.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

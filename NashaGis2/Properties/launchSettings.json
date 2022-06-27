@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "NashaGis2": {
+      "commandName": "Project"
+    },
+    "Профиль 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\t2242\\AppData\\Local\\NashaGIS Editor\\MapApplication.exe",
+      "commandLineArgs": ".\\NashaGis2.dll"
+    }
+  }
+}
