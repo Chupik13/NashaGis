@@ -47,11 +47,19 @@ namespace NashaGis2
                 var layer = model.FeatureLayers.FirstOrDefault();
                 var queryFilter = new QueryFilter();
                 queryFilter.WhereClause = "(Недропольз)='АО ОРЕНБУРГНЕФТЬ'";
-                var result = layer.Search(queryFilter)
-                    .ToEnumerable().Where(x => x.GetValue("Название") != null)
-                    .MaxBy(x => x.Shape.GetArea(x => x));
-                MessageBox.Show($"Название: {result.GetValue("Название").ToString()} " +
-                    $"Площадь: {result.Shape.GetArea(x=>x)}");
+                try
+                {
+                    var result = layer.Search(queryFilter)
+                        .ToEnumerable().Where(x => x.GetValue("Название") != null)
+                        .MaxBy(x => x.Shape.GetArea(x => x));
+
+                    MessageBox.Show($"Название: {result.GetValue("Название").ToString()} " +
+                        $"Площадь: {result.Shape.GetArea(x => x)}");
+                }
+                catch(Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                }
             }
         }
     }
